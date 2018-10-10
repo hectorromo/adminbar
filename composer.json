@@ -1,5 +1,5 @@
 {
-    "name": "hectorromo/hectorromo-adminbar",
+    "name": "hectorromo/adminbar",
     "description": "Admin Bar",
     "version": "1.0.0-beta",
     "autoload": {
