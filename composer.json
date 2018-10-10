@@ -1,0 +1,8 @@
+{
+    "name": "hectorromo/hectorromo-adminbar",
+    "description": "Admin Bar",
+    "version": "1.0.0-beta",
+    "autoload": {
+        "files": ["config.php"]
+    }
+}
