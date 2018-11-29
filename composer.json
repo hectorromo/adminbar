@@ -3,7 +3,22 @@
     "description": "Admin Bar",
     "version": "1.0.0-beta",
     "type": "plugin",
+    "keywords": ["kirby", "plugin"],
+    "homepage": "https://strom.agency",
     "autoload": {
         "files": ["config.php"]
-    }
+    },
+    "authors": [
+        {
+            "name": "Hector Romo",
+            "email": "hector@strom.agency",
+            "homepage": "https://www.hectorromo.com"
+        }
+    ],
+    "support": {
+        "email": "hector@strom.agency",
+        "issues": "https://github.com/hectorromo/adminbar/issues",
+        "source": "https://github.com/hectorromo/adminbar"
+    },
+    "minimum-stability": "dev"
 }
