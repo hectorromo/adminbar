@@ -20,8 +20,5 @@
         "issues": "https://github.com/hectorromo/adminbar/issues",
         "source": "https://github.com/hectorromo/adminbar"
     },
-    "require": {
-        "composer/installers": "~1.0"
-    },
     "minimum-stability": "beta"
 }
