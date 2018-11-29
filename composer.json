@@ -2,6 +2,7 @@
     "name": "hectorromo/adminbar",
     "description": "Admin Bar",
     "version": "1.0.0-beta",
+    "type": "plugin",
     "autoload": {
         "files": ["config.php"]
     }
