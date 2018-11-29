@@ -8,6 +8,9 @@
     "autoload": {
         "files": ["config.php"]
     },
+    "extra": {
+        "path": "site/plugins/"
+    },
     "authors": [
         {
             "name": "Hector Romo",
