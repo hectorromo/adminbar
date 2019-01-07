@@ -8,9 +8,10 @@
     <div id="adminbar">
         <div class="panel">
 
-            <span><strong>Page:</strong> <?= $page->title(); ?></span>
-            
-            <a class="Button Button--xSmall" href="<?= $page->panelUrl(); ?>">Edit page</a>
+            <div>
+                <span><strong>Page:</strong> <?= $page->title(); ?></span>
+                <a class="Button Button--xSmall" href="<?= $page->panelUrl(); ?>">Edit page</a>
+            </div>
 
             <a href="#" class="adminbar-close">
                 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

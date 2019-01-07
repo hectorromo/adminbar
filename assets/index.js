@@ -18,20 +18,42 @@
             return null;
         };
     }
+})();
 
 
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    var getCookie = function(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    };
+    var hideBar = function() {
+        adminbar.classList.add('hidden');
+    }
+    var showBar = function() {
+        adminbar.classList.remove('hidden');
+    }
     var adminbar = document.getElementById('adminbar');
+    var isBarVisible = getCookie('adminbar_visible');
+    
+    if(isBarVisible == 'true') {
+        showBar();
+    } else {
+        hideBar();
+    }
 
     adminbar.addEventListener('click', function(e) {
-        
         if(e.target.closest('.adminbar-close')) {
             e.preventDefault();
-            adminbar.classList.add('hidden');
+            hideBar();
+            document.cookie = 'adminbar_visible=false; expires=Fri, 31 Dec 2024 23:59:59 GMT';
         }
         
         if(e.target.closest('.trigger')) {
             e.preventDefault();
-            adminbar.classList.remove('hidden');
+            showBar();
+            document.cookie = 'adminbar_visible=true; expires=Fri, 31 Dec 2024 23:59:59 GMT';
         }
     })
-})();
+});
