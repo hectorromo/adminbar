@@ -3,7 +3,8 @@
 } */
 
 #adminbar {
-    font-family: sans-serif;
+    font-family: inherit;
+    /* font-family: sans-serif; */
 }
 #adminbar p {
     font-size: .8rem;
