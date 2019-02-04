@@ -1,2 +1,7 @@
-<?php 
-require_once __DIR__ . '/vendor/autoload.php';
+<?php
+
+Kirby::plugin('hectorromo/adminbar', [
+    'snippets' => [
+        'adminbar' => __DIR__ . '/snippets/adminbar.php'
+    ]
+]);

@@ -5,9 +5,6 @@
     "type": "kirby-plugin",
     "keywords": ["kirby", "plugin"],
     "homepage": "https://strom.agency",
-    "autoload": {
-        "files": ["config.php"]
-    },
     "authors": [
         {
             "name": "Hector Romo",
@@ -15,10 +12,7 @@
             "homepage": "https://www.hectorromo.com"
         }
     ],
-    "support": {
-        "email": "hector@strom.agency",
-        "issues": "https://github.com/hectorromo/adminbar/issues",
-        "source": "https://github.com/hectorromo/adminbar"
-    },
-    "minimum-stability": "beta"
+    "require": {
+        "composer/installers": "~1.0"
+    }
 }
